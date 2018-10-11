@@ -84,12 +84,12 @@ testPoint=0
 canMove=True
 while(canMove):
     
-    actionPool=np.argmax(qMatrix[testPoint,:])
-    print(qMatrix[testPoint,:],actionPool)
-    if actionPool==endState:
+    actionNext=np.argmax(qMatrix[testPoint,:])
+    print(qMatrix[testPoint,:],actionNext)
+    if actionNext==endState:
         canMove=False
     else:
-        testPoint=actionPool
+        testPoint=actionNext
         
  '''
  [0.          0.          0.          0.         11.11111111  0.      ]   4
